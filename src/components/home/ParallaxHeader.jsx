@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 const ParallaxHeader = () => {
     const bgRef = useRef(null);
     const divRef = useRef(null);
-    const speed = 0.3;
+    const speed = 0.8;
     const scrollY = useRef(0); // store scroll position
 
     // Update div height after image loads

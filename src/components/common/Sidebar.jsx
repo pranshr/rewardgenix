@@ -1,5 +1,5 @@
 import { useState } from "react";
-import NavLink from "./NavLink";
+import NavItem from "./NavLink";
 
 
 
@@ -15,12 +15,12 @@ const Sidebar = () => {
             <div className={`text-[32px] font-[Poppins] font-[500] border-[#bbbbbb] bg-[#f7f7f7] transition-[width] duration-500
                             ${isOpen ? "w-[360px] border-r" : "w-0"} overflow-hidden`}>
                 <ul className="py-[40px]">
-                    <NavLink label="Home" />
-                    <NavLink label="About" />
-                    <NavLink label="Solutions" />
-                    <NavLink label="Technology" />
-                    <NavLink label="Contact Us" />
-                    <NavLink label="Blog" />
+                    <NavItem route="/" label="Home" />
+                    <NavItem route="/about" label="About" />
+                    <NavItem route="" label="Solutions" />
+                    <NavItem route="" label="Technology" />
+                    <NavItem route="" label="Contact Us" />
+                    <NavItem route="" label="Blog" />
                 </ul>
             </div>
 
