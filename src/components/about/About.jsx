@@ -5,8 +5,8 @@ import AboutCard from './AboutCard'
 const About = () => {
     return (
         <div className="w-[calc(100%-6rem)]">
-            <header className="bg-[#c4c5d5]">
-                <img className="h-12 ml-25" src="/logo.svg" alt="logo" />
+            <header className="bg-[#e5e6f8] p-3">
+                <img className="h-18 ml-25" src="img/logo.png" alt="logo" />
             </header>
             <div className="Content">
                 <div className="flex flex-col items-center pt-12">

@@ -5,7 +5,7 @@ import './AboutCard.css';
 const AboutCard= () => {
 
     return (
-        <div className="h-80 w-55">
+        <div className="h-120 w-100">
             <div className="rounded-lg overflow-hidden">
                 <img className="zoom-in" src="/img/maleFace.jpeg" />
             </div>
