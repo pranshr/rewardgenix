@@ -26,7 +26,7 @@ const Solutions = () => {
     ]
 
     return (
-        <div className="w-[calc(100%-6rem)]">
+        <div className=" w-[calc(100%-4rem)] 2xl:w-[calc(100%-5rem)]">
             <Header />
             <div className="Content">
                 <div className="flex flex-col items-center pt-12">
@@ -40,7 +40,7 @@ const Solutions = () => {
                 {/* <div className="w-5/10 mx-auto text-center m-12 text-[32px] leading-10">
                     <p>We bring together experience of 50+ man years and 100+programs in Rewards and Loyalty.</p>
                 </div> */}
-                <div className="container grid grid-rows-1 grid-cols-3 p-10 justify-items-center gap-x-10 w-fit mx-auto">
+                <div className="container grid grid-rows-1 grid-cols-3 p-10 justify-items-center gap-x-8 2xl:gap-x-10 w-fit mx-auto">
                     <SolutionsCard solution={keySolutions[0]} />
                     <SolutionsCard solution={keySolutions[1]} />
                     <SolutionsCard solution={keySolutions[2]} />

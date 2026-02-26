@@ -11,7 +11,7 @@ const About = () => {
             name: "Manish Chanana",
             img: "manish.jpg",
             designation: "Co-Founder & CEO",
-            description:"Lorem Ipsum is simply dummy sample text of the printing and typesetting industry. Lorem Ipsum has been.",
+            description:"Lorem Ipsum is simply dummy sample text of the printing and typesetting industry.",
             email:"",
             mobile:""
         },
@@ -19,7 +19,7 @@ const About = () => {
             name: "Varun Dutt",
             img: "varun.jpg",
             designation: "Co-Founder & COO",
-            description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
+            description:"Lorem Ipsum is simply dummy sample text of the printing and typesetting industry.",
             email:"",
             mobile:""
         },
@@ -27,7 +27,7 @@ const About = () => {
             name: "Raj Chengappa",
             img: "raj.jpg",
             designation: "Co-Founder & CBO",
-            description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
+            description:"Lorem Ipsum is simply dummy sample text of the printing and typesetting industry.",
             email:"",
             mobile:""
         }
@@ -35,7 +35,7 @@ const About = () => {
     ]
 
     return (
-        <div className="w-[calc(100%-6rem)]">
+        <div className=" w-[calc(100%-4rem)] 2xl:w-[calc(100%-5rem)]">
             <Header />
             <div className="Content">
                 <div className="flex flex-col items-center pt-12">
@@ -46,10 +46,10 @@ const About = () => {
                         About Us
                     </h1>
                 </div>
-                <div className="w-5/10 mx-auto text-center m-12 text-[32px] leading-10">
+                <div className="w-5/10 mx-auto text-center m-12 text-[2rem] leading-10">
                     <p>We bring together experience of 50+ man years and 100+programs in Rewards and Loyalty.</p>
                 </div>
-                <div className="container grid grid-rows-1 grid-cols-3 p-10 justify-items-center gap-x-10 w-fit mx-auto">
+                <div className="container grid grid-rows-1 grid-cols-3 p-10 justify-items-center gap-x-8 2xl:gap-x-10 w-fit mx-auto">
                     <AboutCard person={keyPeople[0]} />
                     <AboutCard person={keyPeople[1]} />
                     <AboutCard person={keyPeople[2]} />

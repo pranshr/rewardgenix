@@ -12,8 +12,8 @@ const Sidebar = () => {
         <nav className="fixed right-0 top-0 h-screen bg-[#f7f7f7] flex">
 
 
-            <div className={`text-[32px] font-[Poppins] font-[500] border-[#bbbbbb] bg-[#f7f7f7] transition-[width] duration-500
-                            ${isOpen ? "w-[360px] border-r" : "w-0"} overflow-hidden`}>
+            <div className={`text-[1.44rem] 2xl:text-[2rem] font-[Poppins] font-[500] border-[#bbbbbb] bg-[#f7f7f7] transition-[width] duration-500
+                            ${isOpen ? "w-[16rem] 2xl:w-[20rem] border-r" : "w-0"} overflow-hidden`}>
                 <ul className="py-[40px]">
                     <NavItem route="/" label="Home" />
                     <NavItem route="/about" label="About" />
@@ -25,13 +25,13 @@ const Sidebar = () => {
             </div>
 
 
-            <div className="h-full w-[5rem] xl:w-[6rem] flex flex-col justify-between items-center">
+            <div className="h-full w-[4rem] 2xl:w-[6rem] flex flex-col justify-between items-center">
 
                 <div className="p-[20px] text-[32px] text-[#011130] cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
                     <i className={`${isOpen ? "fa-solid fa-xmark" : "fas fa-bars" }`}></i>
                 </div>
 
-                <div className="flex flex-col p-[20px] gap-[20px] text-[32px] text-[#c3966e]">
+                <div className="flex flex-col p-[20px] gap-[20px] text-[1.8rem] 2xl:text-[2rem] text-[#c3966e]">
                     <i className="fa-brands fa-facebook cursor-pointer"></i>
                     <i className="fa-brands fa-linkedin cursor-pointer"></i>
                     <i className="fa-brands fa-instagram cursor-pointer"></i>

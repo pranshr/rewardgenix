@@ -12,8 +12,11 @@ const NotFound = () => {
                     Page not found...
                 </div>
                 <h1 className="text-8xl font-semibold uppercase text-[#272A59]">
-                    Under Construction
+                    Coming soon.
                 </h1>
+                <p className="w-5/10 text-center m-12 text-[2rem] leading-10">
+                    Lorem Ipsum is simply dummy sample text of the printing and typesetting industry.
+                </p>
                 <div className="h-[400px]"></div>
             </div>
             <Footer />

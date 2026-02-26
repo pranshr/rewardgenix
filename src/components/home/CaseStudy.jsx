@@ -11,19 +11,19 @@ const CaseStudy = () => {
         </h2>
 
         <div className="grid grid-cols-5 gap-x-4 mt-6 mb-19">
-            <div className="h-70 w-48 relative -top-5">
+            <div className="h-70 w-48 relative">
                 <FlipCard />
             </div>
-            <div className="h-70 w-48 relative top-5">
+            <div className="h-70 w-48 relative">
                 <FlipCard />
             </div>
-            <div className="h-70 w-48 relative -top-5">
+            <div className="h-70 w-48 relative">
                 <FlipCard />
             </div>
-            <div className="h-70 w-48 relative top-5">
+            <div className="h-70 w-48 relative">
                 <FlipCard />
             </div>
-            <div className="h-70 w-48 relative -top-5">
+            <div className="h-70 w-48 relative">
                 <FlipCard />
             </div>
         </div>
