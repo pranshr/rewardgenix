@@ -7,7 +7,7 @@ import IntegratedCX from "./IntegratedCX"
 const Home = () => {
 
     return (
-        <div className="w-[calc(100%-6rem)]">
+        <div className=" w-[calc(100%-5rem)] xl:w-[calc(100%-5rem)]">
             <ParallaxHeader />
             <div className="relative">
                 <IntegratedCX />

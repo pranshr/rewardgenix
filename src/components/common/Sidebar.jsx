@@ -17,15 +17,15 @@ const Sidebar = () => {
                 <ul className="py-[40px]">
                     <NavItem route="/" label="Home" />
                     <NavItem route="/about" label="About" />
-                    <NavItem route="" label="Solutions" />
-                    <NavItem route="" label="Technology" />
-                    <NavItem route="" label="Contact Us" />
-                    <NavItem route="" label="Blog" />
+                    <NavItem route="/solutions" label="Solutions" />
+                    <NavItem route="/technology" label="Technology" />
+                    <NavItem route="/contact" label="Contact Us" />
+                    <NavItem route="/blog" label="Blog" />
                 </ul>
             </div>
 
 
-            <div className="h-full w-[6rem] flex flex-col justify-between items-center">
+            <div className="h-full w-[5rem] xl:w-[6rem] flex flex-col justify-between items-center">
 
                 <div className="p-[20px] text-[32px] text-[#011130] cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
                     <i className={`${isOpen ? "fa-solid fa-xmark" : "fas fa-bars" }`}></i>

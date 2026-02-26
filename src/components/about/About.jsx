@@ -1,4 +1,6 @@
 import AboutCard from './AboutCard'
+import Header from '../common/Header'
+import Footer from '../common/Footer'
 
 
 
@@ -34,9 +36,7 @@ const About = () => {
 
     return (
         <div className="w-[calc(100%-6rem)]">
-            <header className="bg-[#e5e6f8] p-3">
-                <img className="h-18 ml-25" src="img/logo.png" alt="logo" />
-            </header>
+            <Header />
             <div className="Content">
                 <div className="flex flex-col items-center pt-12">
                     <div className="text-sm text-[#272A59]">
@@ -56,7 +56,7 @@ const About = () => {
                 </div>
             </div>
             <img src="./img/faqs.jpg" alt="faq" />
-            <img src="./img/footer.jpg" alt="footer" />
+            <Footer />
         </div>
     )
 }

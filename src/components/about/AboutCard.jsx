@@ -7,7 +7,7 @@ const AboutCard= (props) => {
     const {person} = props;
 
     return (
-        <div className="w-100">
+        <div className="w-90">
             <div className="rounded-2xl overflow-hidden">
                 <img className="zoom-in aspect-9/10" src={`./img/${person.img}`} />
             </div>
