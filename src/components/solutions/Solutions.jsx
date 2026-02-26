@@ -9,17 +9,17 @@ const Solutions = () => {
     const keySolutions = [
         {
             title: "Enablement",
-            img: "manish.jpg",
+            img: "enablement.jpg",
             description:"Lorem Ipsum is simply dummy sample text of the printing and typesetting industry. Lorem Ipsum has been.",
         },
         {
             title: "Engagement",
-            img: "manish.jpg",
+            img: "engagement.jpg",
             description:"Lorem Ipsum is simply dummy sample text of the printing and typesetting industry. Lorem Ipsum has been.",
         },
         {
             title: "Rewards",
-            img: "manish.jpg",
+            img: "rewards.jpg",
             description:"Lorem Ipsum is simply dummy sample text of the printing and typesetting industry. Lorem Ipsum has been.",
         }
 
