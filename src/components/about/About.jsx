@@ -35,7 +35,7 @@ const About = () => {
     ]
 
     return (
-        <div className=" w-[calc(100%-4rem)] 2xl:w-[calc(100%-5rem)]">
+        <div className="w-[calc(100%-4rem)] 2xl:w-[calc(100%-6rem)]">
             <Header />
             <div className="Content">
                 <div className="flex flex-col items-center pt-12">
