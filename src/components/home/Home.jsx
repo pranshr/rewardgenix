@@ -38,8 +38,8 @@ const SolutionsSection = () => {
           <p className="text-[14px] text-[#555] leading-[1.85] mb-[34px]">
             Programs designed to deliver business objectives. Rewardgenix turns loyalty into a seamless, integrated member experience. Backed by loyalty, technology, and engagement.
           </p>
-          <a href="#" className="inline-flex items-center gap-[6px] bg-gradient-to-tr from-[#c79a73] to-[#7a5132] text-white text-[14px] font-light rounded-full px-[18px] py-[6px] w-fit transition-all duration-300 no-underline shadow-[0_4px_16px_rgba(201,168,124,0.35)] hover:translate-x-1 hover:text-white">
-            More <span className="text-[16px] inline-block transition-transform duration-300 group-hover:translate-x-[5px]">→</span>
+          <a href="#" className="inline-flex items-center gap-[6px] bg-linear-to-r from-[#916137] to-[#c3966e] text-white text-[14px] font-light rounded-full px-[18px] py-[6px] w-fit transition-all duration-300 no-underline shadow-[0_4px_16px_rgba(201,168,124,0.35)] hover:translate-x-1 hover:text-white">
+            More <span className="text-[16px] inline-block transition-transform duration-300 group-hover:translate-x-[5px] ">→</span>
           </a>
         </div>
 
@@ -98,7 +98,7 @@ const MobileSection = () => {
           <p className="text-[14.5px] text-[#555] leading-[1.75] mb-[36px]">
             End-to-End program Experience a must<br />to Deliver Business Outcomes
           </p>
-          <a href="#" className="inline-flex items-center gap-[6px] text-white text-[14px] font-light rounded-full px-[20px] py-[6px] no-underline transition-all duration-300 shadow-[0_4px_16px_rgba(201,168,124,0.35)] hover:translate-x-1 hover:text-white" style={{ background: 'linear-gradient(to top right, #c79a73, #7a5132)' }}>
+          <a href="#" className="inline-flex items-center gap-[6px] text-white text-[14px] font-light rounded-full px-[20px] py-[6px] no-underline transition-all duration-300 shadow-[0_4px_16px_rgba(201,168,124,0.35)] hover:translate-x-1 hover:text-white bg-linear-to-r from-[#916137] to-[#c3966e]" >
             More <span className="text-[16px] inline-block transition-transform duration-300">→</span>
           </a>
         </div>
@@ -245,7 +245,7 @@ const FAQSection = () => {
 ───────────────────────────────────────── */
 const Home = () => {
   return (
-    <div className="w-[calc(100%-6rem)]">
+    <div className="w-[calc(100%-4rem)] 2xl:w-[calc(100%-6rem)]">
       <ParallaxHeader />
       <div className="relative">
         <IntegratedCX />
