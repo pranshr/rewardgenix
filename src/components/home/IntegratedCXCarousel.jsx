@@ -40,7 +40,7 @@ const IntegratedCXCarousel = () => {
                     />
                 ))}
             </div>
-            <div className="w-5/12 bg-[#1d1e5e] px-8 py-5 2xl:py-8 gap-3 2xl:gap-8 flex flex-col">
+            <div className="w-5/12 bg-[#1d1e5e] px-8 py-8 2xl:py-8 gap-8 2xl:gap-8 flex flex-col">
                 {data.map((item, idx) => (
                     <div key={idx} className={"flex flex-col justify-between"}>
                         <h1 className={`text-xl 2xl:text-4xl font-semibold transition-all duration-500 ${idx === activeIndex ? 'bg-gradient-to-r from-[#d2a37b] to-[#825a4d] bg-clip-text text-transparent' : 'text-white'}`}>

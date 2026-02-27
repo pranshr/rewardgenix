@@ -1,11 +1,11 @@
 import { useState } from "react";
-import solutionimg from '../../assets/index-loyalty-gfx.jpg'
-import solutionimgbg from '../../assets/index-solution-bg.jpg'
-import mobilebg from '../../assets/index-mobile-tab-bg.png'
-import laptop  from '../../assets/index-laptop.png'
-import ParallaxHeader from "./ParallaxHeader"
-import CaseStudy from "./CaseStudy"
-import IntegratedCX from "./IntegratedCX"
+import solutionimg from '../../assets/index-loyalty-gfx.jpg';
+import solutionimgbg from '../../assets/index-solution-bg.jpg';
+import mobilebg from '../../assets/index-mobile-tab-bg.png';
+import laptop  from '../../assets/index-laptop.png';
+import ParallaxHeader from "./ParallaxHeader";
+import CaseStudy from "./CaseStudy";
+import IntegratedCX from "./IntegratedCX";
 
 /* ─────────────────────────────────────────
    SOLUTIONS SECTION
@@ -14,8 +14,7 @@ const SolutionsSection = () => {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
-        .sol-section * { font-family: 'Poppins', sans-serif; box-sizing: border-box; }
+        .sol-section * { box-sizing: border-box; }
         .sol-section { position: relative; width: 100%; min-height: 560px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
         .sol-bg {
           position: absolute;
@@ -25,12 +24,7 @@ const SolutionsSection = () => {
           background-repeat: no-repeat;
           z-index: 0;
         }
-        .sol-bg::before { content: ''; position: absolute; inset: 0; background-image: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.012) 2px, rgba(255,255,255,0.012) 4px); z-index: 1; }
-        .sol-bg::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.28) 100%); z-index: 2; }
-        .sol-decor-circle { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); z-index: 1; }
-        .sol-decor-circle.c1 { width: 320px; height: 320px; top: -80px; left: 10%; }
-        .sol-decor-circle.c2 { width: 260px; height: 260px; bottom: -100px; right: 8%; }
-        .sol-card { position: relative; z-index: 3; display: flex; width: 74%; max-width: 860px; min-height: 400px; border-radius: 6px; overflow: hidden; box-shadow: 0 24px 80px rgba(0,0,0,0.35); margin: 60px 0; }
+        .sol-card { position: relative; display: flex; width: 66%; max-width: 860px; min-height: 400px; overflow: hidden; box-shadow: 0 24px 80px rgba(0,0,0,0.35); margin: 60px 0; }
         .sol-card-left { flex: 0 0 46%; background: #eeeef6; padding: 52px 44px 44px 44px; display: flex; flex-direction: column; justify-content: center; position: relative; }
         .sol-label {
     position: absolute;
@@ -60,28 +54,12 @@ const SolutionsSection = () => {
     width: fit-content;
     transition: background 0.3s ease, transform 0.2s ease;
     text-decoration: none;
-    box-shadow: 0 4px 16px rgba(201,168,124,0.35);
 }
-          .sol-btn:hover { background: #b8935f; transform: translateX(4px); color: #fff; }
+        .sol-btn:hover { background: #b8935f; transform: translateX(4px); color: #fff; }
         .sol-btn-arrow { font-size: 16px; display: inline-block; transition: transform 0.25s ease; }
         .sol-btn:hover .sol-btn-arrow { transform: translateX(5px); }
         .sol-card-right { flex: 1; position: relative; overflow: hidden; background: linear-gradient(135deg, #1a2f5a 0%, #0d3350 35%, #1a4a3a 65%, #0f2d45 100%); }
-        .sol-blob { position: absolute; border-radius: 50%; filter: blur(48px); opacity: 0.55; }
-        .sol-blob.b1 { width: 280px; height: 280px; background: radial-gradient(circle, #c9a87c, transparent); top: -60px; right: -60px; }
-        .sol-blob.b2 { width: 220px; height: 220px; background: radial-gradient(circle, #2a6e8a, transparent); bottom: -40px; left: -40px; }
-        .sol-blob.b3 { width: 160px; height: 160px; background: radial-gradient(circle, #4a9a7c, transparent); top: 50%; left: 50%; transform: translate(-50%, -50%); }
-        .sol-ring { position: absolute; border-radius: 50%; border: 1px solid rgba(201,168,124,0.18); }
-        .sol-ring.r1 { width: 320px; height: 320px; top: 50%; left: 50%; transform: translate(-50%, -50%); }
-        .sol-ring.r2 { width: 220px; height: 220px; top: 50%; left: 50%; transform: translate(-50%, -50%); border-color: rgba(201,168,124,0.28); }
-        .sol-ring.r3 { width: 120px; height: 120px; top: 50%; left: 50%; transform: translate(-50%, -50%); border-color: rgba(201,168,124,0.45); background: rgba(201,168,124,0.06); }
-        .sol-center-icon { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 10px; }
-        .sol-icon-star { font-size: 38px; color: #c9a87c; line-height: 1; filter: drop-shadow(0 0 12px rgba(201,168,124,0.6)); }
-        .sol-icon-text { font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.5); }
-        .sol-dots { position: absolute; display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; opacity: 0.18; }
-        .sol-dots.d1 { bottom: 20px; right: 20px; } .sol-dots.d2 { top: 20px; left: 20px; }
-        .sol-dot { width: 4px; height: 4px; border-radius: 50%; background: #c9a87c; }
-        .sol-lines { position: absolute; inset: 0; overflow: hidden; opacity: 0.06; }
-        .sol-lines::before { content: ''; position: absolute; width: 200%; height: 1px; background: linear-gradient(90deg, transparent, #c9a87c, transparent); top: 35%; left: -50%; transform: rotate(-25deg); }
+
       .sol-img-overlay {
     position: absolute;
     inset: 0;
@@ -96,7 +74,6 @@ const SolutionsSection = () => {
       `}</style>
       <div className="sol-section">
         <div className="sol-bg" style={{ backgroundImage: `url(${solutionimgbg})` }} />
-        <div className="sol-decor-circle c1" /><div className="sol-decor-circle c2" />
         <div className="sol-card">
           <div className="sol-card-left">
             <span className="sol-label">Solutions</span>
@@ -105,13 +82,7 @@ const SolutionsSection = () => {
             <a href="#" className="sol-btn">More <span className="sol-btn-arrow">→</span></a>
           </div>
           <div className="sol-card-right">
-            <div className="sol-blob b1" /><div className="sol-blob b2" /><div className="sol-blob b3" />
-            <div className="sol-lines" />
-            <div className="sol-ring r1" /><div className="sol-ring r2" /><div className="sol-ring r3" />
             <img src={solutionimg} alt="" className="sol-img-overlay" />
-            <div className="sol-center-icon"><span className="sol-icon-star">✦</span><span className="sol-icon-text">Rewardgenix</span></div>
-            <div className="sol-dots d1">{Array(25).fill(0).map((_, i) => <div className="sol-dot" key={i} />)}</div>
-            <div className="sol-dots d2">{Array(25).fill(0).map((_, i) => <div className="sol-dot" key={i} />)}</div>
           </div>
         </div>
       </div>
@@ -376,7 +347,7 @@ const FAQSection = () => {
 ───────────────────────────────────────── */
 const Home = () => {
   return (
-    <div className="w-[calc(100%-6rem)]">
+    <div className="w-[calc(100%-4rem)] 2xl:w-[calc(100%-6rem)]">
       <ParallaxHeader />
       <div className="relative">
         <IntegratedCX />
