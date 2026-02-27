@@ -1,6 +1,33 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/forms";
+@tailwind base;
+@tailwind compontnts;
+@tailwind utilities;
 
 * {
     font-family: Poppins;
+}
+
+h1 {}
+
+@layer base {
+    h1 {
+        @apply text-8xl font-semibold uppercase text-[#272A59]
+    }
+    
+    h2 {
+        @apply text-[1.5rem] font-[700] text-[#0c2077] leading-[1.74rem]
+    }
+
+    /*h3 {
+        @apply text-3xl font-semibold text-[#000]
+    }
+
+    h4 {
+        @apply text-[1.5rem] font-[700] text-[#0c2077] leading-[1.74rem]
+    }*/
+
+    p {
+        @apply text-[1rem] font-[400] text-black mb-3 mt-3 leading-[1.42rem]
+    }
 }

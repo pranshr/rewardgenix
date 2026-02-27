@@ -17,13 +17,12 @@ const AboutCard= (props) => {
             <h3 className=" text-xl font-[500] my-2 2xl:my-3">
                 {person.designation}
             </h3>
-            <p className="text-[1rem] 2xl:text-[1.125rem] mt-1 font-[400]">
+            <p>
                 {person.description}
             </p>
         </div>
     )
 
 }
-
 
 export default AboutCard;
