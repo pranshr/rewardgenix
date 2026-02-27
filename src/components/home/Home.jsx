@@ -24,7 +24,7 @@ const SolutionsSection = () => {
           background-repeat: no-repeat;
           z-index: 0;
         }
-        .sol-card { position: relative; display: flex; width: 66%; max-width: 860px; min-height: 400px; overflow: hidden; box-shadow: 0 24px 80px rgba(0,0,0,0.35); margin: 60px 0; }
+        .sol-card { position: relative; display: flex; width: 66%; min-height: 400px; overflow: hidden; box-shadow: 0 24px 80px rgba(0,0,0,0.35); margin: 60px 0; }
         .sol-card-left { flex: 0 0 46%; background: #eeeef6; padding: 52px 44px 44px 44px; display: flex; flex-direction: column; justify-content: center; position: relative; }
         .sol-label {
     position: absolute;
@@ -35,6 +35,7 @@ const SolutionsSection = () => {
     font-size: 12px;
     letter-spacing: 2.5px;
     padding: 30px 10px;
+    margin-bottom:30px;
 }
         .sol-title { font-size: 25px; font-weight: 600; color: #0c2077; line-height: 1.25; margin: 44px 0 16px 0; text-transform: uppercase; }
         .sol-desc { font-size: 14px; color: #555; line-height: 1.85; margin-bottom: 34px; }
@@ -77,7 +78,7 @@ const SolutionsSection = () => {
         <div className="sol-card">
           <div className="sol-card-left">
             <span className="sol-label">Solutions</span>
-            <h2 className="sol-title">Loyalty &amp; Incentive<br />Programs</h2>
+            <h2 className="mt-10 mb-2">Loyalty &amp; Incentive<br />Programs</h2>
             <p className="sol-desc">Programs designed to deliver business objectives. Rewardgenix turns loyalty into a seamless, integrated member experience. Backed by loyalty, technology, and engagement.</p>
             <a href="#" className="sol-btn">More <span className="sol-btn-arrow">→</span></a>
           </div>
@@ -102,11 +103,10 @@ const MobileSection = () => {
         /* ── Outer wrapper ── */
         .mob2-section {
           width: 100%;
-          min-height: 680px;
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 50px 60px;
+          padding: 100px 60px;
           position: relative;
           overflow: hidden;
           /* mobilebg inline style se aayega */
@@ -144,8 +144,7 @@ const MobileSection = () => {
 
         /* ── Inner layout ── */
         .mob2-inner {
-          max-width: 960px;
-          width: 100%;
+          width: 66%;
           display: flex;
           align-items: center;
           gap: 40px;
@@ -155,19 +154,17 @@ const MobileSection = () => {
 
         /* ── LEFT: Laptop image ── */
         .mob2-device-wrap {
-          flex: 0 0 55%;
           display: flex;
           align-items: center;
           justify-content: center;
+          width:50%;
         }
 
         /* ✅ Real laptop image */
         .mob2-laptop-img {
           width: 100%;
-          max-width: 520px;
           height: auto;
           object-fit: contain;
-          filter: drop-shadow(0 30px 60px rgba(0,0,0,0.22));
         }
 
         /* ── RIGHT: Text panel ── */

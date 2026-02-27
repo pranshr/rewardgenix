@@ -11,12 +11,12 @@ const Contact = () => {
                 <div className=" text-[#272A59]">
                     Get in touch
                 </div>
-                <h1 className="text-8xl font-semibold uppercase text-[#272A59]">
+                <h1>
                     Contact Us
                 </h1>
                 <div className="grid grid-cols-12 gap-[1.5rem] mt-14 mx-50 mb-20">
                     <div className="col-1 col-span-5 2xl:col-span-4">
-                        <h3 className="text-3xl font-semibold uppercase text-[#272A59]">
+                        <h3>
                             We are Rewardgenix and we are here to serve! How can we help you?
                         </h3>
                         <p>

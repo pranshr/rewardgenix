@@ -42,11 +42,11 @@ const About = () => {
                     <div className="text-sm text-[#272A59]">
                         The Leadership
                     </div>
-                    <h1 className="text-8xl font-semibold uppercase text-[#272A59]">
+                    <h1>
                         About Us
                     </h1>
                 </div>
-                <div className="w-5/10 mx-auto text-center m-12 text-[2rem] leading-10">
+                <div className="w-4/10 mx-auto text-center mt-8 mb-4 text-[2rem] leading-10">
                     <p>We bring together experience of 50+ man years and 100+programs in Rewards and Loyalty.</p>
                 </div>
                 <div className="container grid grid-rows-1 grid-cols-3 p-10 justify-items-center gap-x-8 2xl:gap-x-10 w-fit mx-auto">

@@ -10,20 +10,20 @@ const CaseStudy = () => {
             Case Study
         </h2>
 
-        <div className="grid grid-cols-5 gap-x-4 mt-6 mb-19">
-            <div className="h-70 w-48 relative">
+        <div className="grid grid-cols-5 gap-x-4 w-80/100 mt-6 mb-19">
+            <div className="aspect-12/15 relative">
                 <FlipCard />
             </div>
-            <div className="h-70 w-48 relative">
+            <div className="aspect-12/15 relative">
                 <FlipCard />
             </div>
-            <div className="h-70 w-48 relative">
+            <div className="aspect-12/15 relative">
                 <FlipCard />
             </div>
-            <div className="h-70 w-48 relative">
+            <div className="aspect-12/15 relative"> 
                 <FlipCard />
             </div>
-            <div className="h-70 w-48 relative">
+            <div className="aspect-12/15 relative">
                 <FlipCard />
             </div>
         </div>
