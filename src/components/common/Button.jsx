@@ -1,5 +1,5 @@
-// import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";git
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 
