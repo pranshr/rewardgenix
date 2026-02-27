@@ -1,6 +1,7 @@
 import AboutCard from './AboutCard'
 import Header from '../common/Header'
 import Footer from '../common/Footer'
+import FAQSection from '../common/FAQSection'
 
 
 
@@ -55,7 +56,7 @@ const About = () => {
                     <AboutCard person={keyPeople[2]} />
                 </div>
             </div>
-            <img src="./img/faqs.jpg" alt="faq" />
+            <FAQSection />            
             <Footer />
         </div>
     )
