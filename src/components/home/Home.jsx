@@ -96,8 +96,8 @@ const Home = () => {
         <SolutionsSection />
         <MobileSection />
         <CaseStudy />
-        <FAQSection />
         <News/>
+        <FAQSection />
         <img src="./img/footer.jpg" alt="footer" />
       </div>
     </div>

@@ -15,7 +15,7 @@ const TermsNConditions = () => {
                     Terms
                 </h1>
                 <p2 className="w-5/10 2xl:w-4/10 text-center m-12">
-                    Lorem Ipsum is simply dummy sample text of the printing and typesetting industry.
+                    Acceptance, general terms etc
                 </p2>
 
                 <div className="w-8/10 2xl:w-6/10 m-2">

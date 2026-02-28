@@ -15,7 +15,7 @@ const PlayIcon = () => (
 const newsData = {
   featured: {
     type: "video",
-    heading: "Article heading can i find spaces in the lorem?",
+    heading: "Channel loyalty isn’t bought by schemes. It’s earned through service.",
     image: newsimg1,
   },
   secondary: [
@@ -23,7 +23,7 @@ const newsData = {
       id: 1,
       type: "image",
       image: newsimg3,
-      caption: "Lorem Ipsum Interpretation common Symbols and their meanings",
+      caption: "What We've Learned From 100+ Implementations...",
     },
     {
       id: 2,
@@ -60,12 +60,7 @@ export default function NewsSection() {
             className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           />
           {/* Left half - dark blue transparent overlay with text */}
-<div className="absolute inset-y-0 left-0 w-1/2 bg-[oklch(0.4_0.25_263.84/0.73)] flex flex-col justify-end p-5">
-  <div className="absolute top-5 left-5">
-              <svg className="w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
+          <div className="absolute inset-y-0 left-0 w-1/2 bg-[oklch(0.4_0.25_263.84/0.73)] flex flex-col justify-end p-5">
             <h3 className="text-white text-lg font-semibold leading-snug">
               {newsData.featured.heading}
             </h3>
@@ -73,32 +68,32 @@ export default function NewsSection() {
         </div>
 
         {/* Right side portrait - news-4 (row-span-2) */}
-        <div className="row-span-2 overflow-hidden">
+        <div className="row-span-2 overflow-hidden cursor-pointer">
           <img
             src={newsData.secondary[2].image}
             alt="person"
-            className="w-full h-118 object-cover object-top"
+            className="w-full h-123 object-cover group-hover:scale-105 transition-transform duration-500"
           />
-          <p>Lorem Ipsum Interpretation common Symbols and their meanings</p>
+          <p>Why “soft” benefits matter more than you think?</p>
         </div>
 
         {/* Bottom left - news-2 */}
         <div className="col-span-1 cursor-pointer group">
-          <div className="overflow-hidden h-36">
+          <div className="overflow-hidden h-49">
             <img
               src={newsData.secondary[0].image}
               alt="news 2"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
           </div>
-          <p className="text-sm text-gray-700 mt-2 leading-snug">
+          <p>
             {newsData.secondary[0].caption}
           </p>
         </div>
 
         {/* Bottom middle - news-3 with play button */}
         <div className="col-span-1 cursor-pointer group relative">
-          <div className="overflow-hidden h-32 relative">
+          <div className="overflow-hidden h-61 relative">
             <img
               src={newsData.secondary[1].image}
               alt="news 3 -video"

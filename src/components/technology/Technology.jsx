@@ -172,7 +172,9 @@ export default function TechnologySection() {
       <Header />
       {/* ── Hero — Image 2 exact ── */}
       <div className="text-center" style={{ paddingTop: 52, paddingBottom: 36 }}>
-        <p className="text-gray-400 mb-1.5" style={{ fontSize: 13 }}>Our backbone</p>
+        <div className=" text-[#272A59]">
+                    Our backbone
+                </div>
         <h1>
           TECHNOLOGY
         </h1>
