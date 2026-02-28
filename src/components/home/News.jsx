@@ -43,7 +43,7 @@ const newsData = {
 export default function NewsSection() {
   return (
     <div className="bg-white">
-    <section className="max-w-5xl mx-auto px-6 py-12">
+    <section className="max-w-5xl mx-auto py-12">
       {/* Title */}
       <h2 className="text-3xl text-[#2B2E5B] my-8 font-semibold uppercase text-center">
         News
@@ -69,7 +69,7 @@ export default function NewsSection() {
         </div>
 
         {/* Right side portrait - news-4 (row-span-2) */}
-        <div className="row-span-2 overflow-hidden cursor-pointer">
+        <div className="row-span-2 overflow-hidden cursor-pointer ">
           <img
             src={newsData.secondary[2].image}
             alt="person"
