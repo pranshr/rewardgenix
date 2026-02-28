@@ -34,7 +34,19 @@
     }*/
 
     p {
-        @apply text-[1rem] font-[400] text-black mb-3 mt-3 leading-[1.42rem]
+        @apply text-[1rem] font-[400] text-black mb-4 mt-3 leading-[1.46rem]
+    }
+
+    p2 {
+        @apply text-[1.4rem] font-[400] text-black mb-3 mt-3 leading-[1.84rem]
+    }
+
+    ul{
+        @apply my-[1rem] /*list-disc ml-2*/
+    }
+    
+    li{
+        /*@apply ml-[12px]*/
     }
 }
 

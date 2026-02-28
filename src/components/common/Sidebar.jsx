@@ -12,15 +12,21 @@ const Sidebar = () => {
         <nav className="fixed right-0 top-0 h-screen bg-[#f7f7f7] flex">
 
 
-            <div className={`text-[1.44rem] 2xl:text-[2rem] font-[Poppins] font-[500] border-[#bbbbbb] bg-[#f7f7f7] transition-[width] duration-500
+            <div className={`text-[1.1rem] 2xl:text-[1.46rem] font-[Poppins] font-[500] border-[#bbbbbb] bg-[#f7f7f7] transition-[width] duration-500
                             ${isOpen ? "w-[16rem] 2xl:w-[20rem] border-r" : "w-0"} overflow-hidden`}>
                 <ul className="py-[40px]">
                     <NavItem route="/" label="Home" />
-                    <NavItem route="/about" label="About" />
+                    <NavItem route="" label="About" clickable={false} />
+                    <NavItem route="/about" label="- Team" />
+                    <NavItem route="/partner-loyalty" label="- Partner Loyalty" />
+                    <NavItem route="/customer-loyalty" label="- Customer Loyalty" />
                     <NavItem route="/solutions" label="Solutions" />
                     <NavItem route="/technology" label="Technology" />
                     <NavItem route="/contact" label="Contact Us" />
                     <NavItem route="/blog" label="Blog" />
+                    <NavItem route="" label="Legal" clickable={false}/>
+                    <NavItem route="/terms-and-conditions" label="- Terms" />
+                    <NavItem route="/privacy-policy" label="- Privacy" />
                 </ul>
             </div>
 

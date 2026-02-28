@@ -19,7 +19,7 @@ const FAQItem = ({ faq, isOpen, onToggle, isLast }) => {
       borderBottom: isLast ? '1.5px solid #c3966d' : 'none',
       padding: '0 20px',
     }}
-      className="hover:bg-[#d3cbfb]"
+      className="hover:bg-[#d8d5f0]"
     >
 
       <button
@@ -90,7 +90,7 @@ const FAQSection = () => {
 
   return (
     <section style={{
-      background: '#e8e4fd',
+      background: '#e4e2f5',
       // minHeight: '100vh',
       display: 'flex',
       alignItems: 'flex-start',

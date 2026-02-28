@@ -16,9 +16,9 @@ const Contact = () => {
                 </h1>
                 <div className="grid grid-cols-12 gap-[1.5rem] mt-14 mx-50 mb-20">
                     <div className="col-1 col-span-5 2xl:col-span-4">
-                        <h3>
+                        <h2>
                             We are Rewardgenix and we are here to serve! How can we help you?
-                        </h3>
+                        </h2>
                         <p>
                             If you have any questions about your submission, directory, billing, courses or anything else, we're here to help!
                         </p>

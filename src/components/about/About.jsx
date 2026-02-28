@@ -44,11 +44,11 @@ const About = () => {
                         The Leadership
                     </div>
                     <h1>
-                        About Us
+                        Team
                     </h1>
                 </div>
-                <div className="w-4/10 mx-auto text-center mt-8 mb-4 text-[2rem] leading-10">
-                    <p>We bring together experience of 50+ man years and 100+programs in Rewards and Loyalty.</p>
+                <div className="w-5/10 2xl:w-4/10 mx-auto text-center mt-8 mb-4 ">
+                    <p2>We bring together experience of 50+ man years and 100+programs in Rewards and Loyalty.</p2>
                 </div>
                 <div className="container grid grid-rows-1 grid-cols-3 p-10 justify-items-center gap-x-8 2xl:gap-x-10 w-fit mx-auto">
                     <AboutCard person={keyPeople[0]} />
