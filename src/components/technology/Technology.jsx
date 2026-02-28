@@ -173,11 +173,14 @@ export default function TechnologySection() {
       {/* ── Hero — Image 2 exact ── */}
       <div className="text-center" style={{ paddingTop: 52, paddingBottom: 36 }}>
         <div className=" text-[#272A59]">
-                    Our backbone
+                    Power your programs
                 </div>
         <h1>
           TECHNOLOGY
         </h1>
+        <div className="w-5/10 2xl:w-4/10 mx-auto text-center mt-8 mb-4 ">
+          <p2>Main Modules : Power your programs with Robust yet Flexible tech platform</p2>
+        </div>
       </div>
 
       {/* ── GRID — Image 2 exact layout ──
