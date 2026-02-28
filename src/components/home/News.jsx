@@ -69,12 +69,14 @@ export default function NewsSection() {
         </div>
 
         {/* Right side portrait - news-4 (row-span-2) */}
-        <div className="row-span-2 overflow-hidden cursor-pointer ">
-          <img
-            src={newsData.secondary[2].image}
-            alt="person"
-            className="w-full h-123 object-cover group-hover:scale-105 transition-transform duration-500"
-          />
+        <div className="row-span-2 overflow-hidden cursor-pointer group">
+          <div className="overflow-hidden h-123">
+            <img
+              src={newsData.secondary[2].image}
+              alt="person"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
           <p>Why “soft” benefits matter more than you think?</p>
         </div>
 
