@@ -6,10 +6,10 @@ import { useState } from "react";
 ───────────────────────────────────────── */
 const faqs = [
   { question: "Why choose us?", answer: "With decades of proven experience in the Rewards & Loyalty domain managing some of the best brands in the country, our team understands the intricacies of channel/ customer/employee behaviour and engagement across diverse industry verticals." },
-  { question: "How do we approach?", answer: "We deploy our S.E.A.M. framework to design and execute your program. The framework is meant to integrate all the key components to deliver the desired business objectives for your organisation." },
+    { question: "What solutions we offer?", answer: "We offer Rewards Curation & Fulfilment. Our vast experience in managing large scale rewards programs enables us to bring curated catalogues (physical and digital) and best in class fulfilment services." },
+    { question: "How do we approach?", answer: "We deploy our S.E.A.M. framework to design and execute your program. The framework is meant to integrate all the key components to deliver the desired business objectives for your organisation." },
   { question: "What services do we provide?", answer: "From innovative rewards solutions to engagement strategies, we offer a full suite of services to ensure your loyalty program is both effective and sustainable." },
-  { question: "How do I approach you for brand solutions?", answer: "Getting in touch is simple! You can reach us via our contact form, send an email, or book a free discovery call through our website. Our brand strategists will get back to you within 24–48 hours to discuss your requirements." },
-  { question: "What do we offer?", answer: "We offer Rewards Curation & Fulfilment. Our vast experience in managing large scale rewards programs enables us to bring curated catalogues (physical and digital) and best in class fulfilment services." },
+  { question: "How can I approach you for brand solutions?", answer: "Getting in touch is simple! You can reach us via our contact form, send an email, or book a free discovery call through our website. Our brand strategists will get back to you within 24–48 hours to discuss your requirements." },
 ];
 
 const FAQItem = ({ faq, isOpen, onToggle, isLast }) => {

@@ -38,7 +38,7 @@ const SolutionsSection = () => {
           <p className="text-[14px] text-[#555] leading-[1.85] mb-[34px]">
             Programs designed to deliver business objectives. Rewardgenix turns loyalty into a seamless, integrated member experience. Backed by loyalty, technology, and engagement.
           </p>
-          <a href="#" className="inline-flex items-center gap-[6px] bg-linear-to-r from-[#916137] to-[#c3966e] text-white text-[14px] font-light rounded-full px-[18px] py-[6px] w-fit transition-all duration-300 no-underline shadow-[0_4px_16px_rgba(201,168,124,0.35)] hover:translate-x-1 hover:text-white">
+          <a href="/solutions" className="inline-flex items-center gap-[6px] bg-linear-to-r from-[#916137] to-[#c3966e] text-white text-[14px] font-light rounded-full px-[18px] py-[6px] w-fit transition-all duration-300 no-underline shadow-[0_4px_16px_rgba(201,168,124,0.35)] hover:translate-x-1 hover:text-white">
             More <span className="text-[16px] inline-block transition-transform duration-300 group-hover:translate-x-[5px] ">→</span>
           </a>
         </div>
