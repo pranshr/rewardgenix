@@ -7,6 +7,7 @@ import ParallaxHeader from "./ParallaxHeader"
 import CaseStudy from "./CaseStudy"
 import IntegratedCX from "./IntegratedCX"
 import FAQSection from "../common/FAQSection";
+import News from "./News"
 
 
 
@@ -59,7 +60,7 @@ const MobileSection = () => {
       className="relative w-full min-h-[600px] flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat font-[Poppins,sans-serif]"
       style={{ backgroundImage: `url(${mobilebg})` }}
     >
-      
+
       <div className="relative w-[66%] flex items-center gap-10">
         <div className="flex-[0_0_55%] flex items-center justify-center">
           <img src={laptop} alt="Laptop" className="w-full object-contain"/>
@@ -96,6 +97,7 @@ const Home = () => {
         <MobileSection />
         <CaseStudy />
         <FAQSection />
+        <News/>
         <img src="./img/footer.jpg" alt="footer" />
       </div>
     </div>
