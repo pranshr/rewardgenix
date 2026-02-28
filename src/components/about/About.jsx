@@ -12,7 +12,7 @@ const About = () => {
             name: "Manish Chanana",
             img: "manish.jpg",
             designation: "Co-Founder & CEO",
-            description:"Lorem Ipsum is simply dummy sample text of the printing and typesetting industry.",
+            description:"Business Leader with 30+ years of experience particularly done a lot of work in Rewards and Loyalty services domain and spearheaded the business for India’s largest Rewards & Loyalty solutions company.",
             email:"",
             mobile:""
         },
@@ -20,7 +20,7 @@ const About = () => {
             name: "Varun Dutt",
             img: "varun.jpg",
             designation: "Co-Founder & COO",
-            description:"Lorem Ipsum is simply dummy sample text of the printing and typesetting industry.",
+            description:"A highly motivated and results driven loyalty marketing professional with 20+ years extensive experience in Sales & Marketing, Operations, Client Servicing, business development and team management.",
             email:"",
             mobile:""
         },
@@ -28,7 +28,7 @@ const About = () => {
             name: "Raj Chengappa",
             img: "raj.jpg",
             designation: "Co-Founder & CBO",
-            description:"Lorem Ipsum is simply dummy sample text of the printing and typesetting industry.",
+            description:"A loyalty and customer engagement professional with 20+ years of experience in implementing and operating Loyalty & Customer experience programs across multiple industries.",
             email:"",
             mobile:""
         }

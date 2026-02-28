@@ -44,7 +44,7 @@ export default function NewsSection() {
   return (
     <section className="max-w-5xl mx-auto px-6 py-12">
       {/* Title */}
-      <h2 className="text-center text-2xl font-extrabold text-blue-700 tracking-widest uppercase mb-8">
+      <h2 className="text-3xl text-[#2B2E5B] my-8 font-semibold uppercase text-center">
         News
       </h2>
 
@@ -101,7 +101,7 @@ export default function NewsSection() {
           <div className="overflow-hidden h-32 relative">
             <img
               src={newsData.secondary[1].image}
-              alt="news 3 video"
+              alt="news 3 -video"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
             <div className="absolute inset-0 flex items-center justify-center">

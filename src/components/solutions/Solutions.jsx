@@ -33,7 +33,7 @@ const Solutions = () => {
                     <div className="text-sm text-[#272A59]">
                         What do we do
                     </div>
-                    <h1 className="text-8xl font-semibold uppercase text-[#272A59]">
+                    <h1>
                         Solutions
                     </h1>
                 </div>

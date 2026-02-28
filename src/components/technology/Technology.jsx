@@ -1,69 +1,64 @@
+import Header from "../common/Header";
+import Footer from "../common/Footer";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+
 
 const cards = [
   {
     id: 1,
-    category: "Travel",
-    title: "5 Inspiring Apps\nfor Your Next Trip",
-    bg: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=85",
-    description: "Discover the best travel apps that will transform how you explore the world. From offline maps to hidden gems finders.",
+    title: "Program & Services",
+    bg: "./img/technology/Program-&-Services.jpg",
+    description: "Manage multi-country program with multi-language website. Allows to control the duration of the program & services. Helps in configuring various earning/burning services with limited/unlimited/Fixed/Multiplier of points.",
   },
   {
     id: 2,
-    category: "How to",
-    title: "Contemplate the Meaning\nof Life Twice a Day",
-    bg: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=900&q=85",
-    description: "Build a mindfulness habit that sticks. Learn how structured reflection can improve focus, clarity, and overall wellbeing.",
+    title: "Members Management",
+    bg: "./img/technology/Members-Management.jpg",
+    description: "Helps in creating member categories basis the nature of the business (B2B or B2C). Manage hierarchy of members. Provides option to create country specific member profiling structure. Configure Online/Offline data capturing interfaces. Configure various integration points APIs or FTP. Create required workflow to handle data.",
   },
   {
     id: 3,
-    category: "Steps",
-    title: "Urban Exploration Apps\nfor the Vertically-Inclined",
-    bg: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=85",
-    description: "Scale rooftops, bridges, and skyscrapers with confidence. These apps give you routes, safety tips and community.",
+    category: "",
+    title: "Transaction Management",
+    bg: "./img/technology/Transaction-Management.jpg",
+    description: "Helps in creating /configuring point transaction profiling structure for members. Configure Online/Offline data capturing interfaces. Configure various integration points APIs or FTP. Create required workflow to handle data.",
   },
   {
     id: 4,
-    category: "Steps",
-    title: "Urban Exploration Apps\nfor the Vertically-Inclined",
-    bg: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=900&q=85",
-    description: "Scale rooftops, bridges, and skyscrapers with confidence.",
+    title: "Catalog Management",
+    bg: "./img/technology/Catalog-Management.jpg",
+    description: "Create country & audience specific catalog. Onboard catalog partners. Configure Online/Offline data capturing interfaces. Configure various integration points APIs or FTP.",
   },
   {
     id: 5,
-    category: "Hats",
-    title: "Take Control of Your Hat Life\nWith This Stunning New App",
-    bg: "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=900&q=85",
-    description: "Organize, discover, and style your hat collection like never before. AI-powered outfit matching included.",
+    title: "Redemption Management",
+    bg: "./img/technology/Redemption-Management.jpg",
+    description: "Manage country specific redemption order. Configure interfaces to capture Online/Offline data. Helps in configuring integration points like APIs or FTP to send/receive data. Handle the orders with configurable workflows.",
   },
   {
     id: 6,
-    category: "Steps",
-    title: "Urban Exploration Apps\nfor the Vertically-Inclined",
-    bg: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=900&q=85",
-    description: "Scale rooftops, bridges, and skyscrapers with confidence.",
+    title: "Communication",
+    bg: "./img/technology/Communication.jpg",
+    description: "Manage various communication templates based on business need. Configure service provider to send communications. Manage communication queue.",
   },
   {
     id: 7,
-    category: "Travel",
-    title: "5 Inspiring Apps\nfor Your Next Trip",
-    bg: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=900&q=85",
-    description: "Discover the best travel apps that will transform how you explore the world.",
+    title: "User Management",
+    bg: "./img/technology/User-Management.jpg",
+    description: "Manage operational users to handle back-end operations. Restrict the operational users with module access and the action they are allowed for. Bind users with a specific program country.",
   },
   {
     id: 8,
-    category: "How to",
-    title: "Contemplate the Meaning\nof Life Twice a Day",
-    bg: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=900&q=85",
-    description: "Build a mindfulness habit that sticks.",
+    title: "Dynamic Rules Engine",
+    bg: "./img/technology/Dynamic-Rules-Engine.jpg",
+    description: "Easy to use interface to build the program logic. Helps in configuring rules for Allocation of Promotional points. Setup Expiry of Points & Membership upgrade/downgrade/expiry. Configure & trigger the event based communication. Apply instantly or schedule rules for specific purpose as per business need.",
   },
   {
     id: 9,
-    category: "Steps",
-    title: "Urban Exploration Apps\nfor the Vertically-Inclined",
-    bg: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=900&q=85",
-    description: "Scale rooftops, bridges, and skyscrapers with confidence.",
+    title: "Content Management System",
+    bg: "./img/technology/Content-Management-System.jpg",
+    description: "Create multi-lingual website. Create unlimited pages. Create language specific navigation. Manage the member website content.",
   },
 ];
 
@@ -93,11 +88,12 @@ function Popup({ startIndex, onClose }) {
   };
 
   return (
+    
     <motion.div
       initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
       onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
       className="fixed inset-0 z-50 flex items-center justify-center p-5"
-      style={{ background: "rgba(8,12,35,0.78)", backdropFilter: "blur(22px)" }}
+      style={{ background: "rgba(8,12,35,0.78)" }}
     >
       {/* LEFT ARROW */}
       <motion.button
@@ -105,7 +101,7 @@ function Popup({ startIndex, onClose }) {
         whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.88 }}
         onClick={prev}
         className="absolute z-10 flex items-center justify-center rounded-full border border-white/30 cursor-pointer"
-        style={{ left: "calc(46% - 300px)", top: "50%", transform: "translateY(-50%)", width: 52, height: 52, background: "rgba(255,255,255,0.1)", backdropFilter: "blur(12px)", boxShadow: "0 8px 30px rgba(0,0,0,0.3)" }}
+        style={{ left: "calc(46% - 300px)", top: "50%", transform: "translateY(-50%)", width: 52, height: 52, background: "rgba(255,255,255,0.1)", backdropFilter: "blur(8px)", boxShadow: "0 8px 30px rgba(0,0,0,0.3)" }}
       >
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
           <path d="M14 5L8 11L14 17" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
@@ -113,7 +109,7 @@ function Popup({ startIndex, onClose }) {
       </motion.button>
 
       {/* POPUP CARD */}
-      <div className="relative z-10 overflow-hidden rounded-3xl" style={{ width: "min(480px, 88vw)" }}>
+      <div className="relative z-10 overflow-hidden rounded-3xl" style={{ width: "min(580px, 88vw)" }}>
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
             key={current} custom={direction} variants={variants}
@@ -122,21 +118,15 @@ function Popup({ startIndex, onClose }) {
             className="bg-white rounded-3xl overflow-hidden"
             style={{ boxShadow: "0 50px 100px rgba(0,0,0,0.55)" }}
           >
-            <div className="relative overflow-hidden" style={{ height: 280 }}>
+            <div className="relative overflow-hidden" style={{ height: 480 }}>
               <img src={card.bg} className="w-full h-full object-cover" alt={card.title} />
               <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,10,35,0.88) 0%, transparent 55%)" }} />
-              <div
-                className="absolute top-4 left-4 px-3 py-1 rounded-full text-white font-extrabold uppercase tracking-widest border border-white/20"
-                style={{ fontSize: 10, background: "rgba(255,255,255,0.15)", backdropFilter: "blur(10px)" }}
-              >
-                {card.category}
-              </div>
               <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={onClose}
                 className="absolute top-3 right-3 w-8 h-8 rounded-full flex items-center justify-center text-white text-lg cursor-pointer border border-white/15"
                 style={{ background: "rgba(0,0,0,0.4)", backdropFilter: "blur(8px)" }}>×
               </motion.button>
               <div className="absolute bottom-4 left-4 right-4">
-                <h2 className="text-white font-extrabold leading-snug" style={{ fontSize: 19, fontFamily: "'Georgia', serif", whiteSpace: "pre-line" }}>
+                <h2 className="text-white font-medium font-extrabold leading-snug" style={{ whiteSpace: "pre-line" }}>
                   {card.title}
                 </h2>
               </div>
@@ -152,16 +142,6 @@ function Popup({ startIndex, onClose }) {
             </div>
             <div className="p-6">
               <p className="text-sm text-gray-500 leading-relaxed mb-5">{card.description}</p>
-              <div className="flex gap-2.5">
-                <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}
-                  className="flex-1 bg-blue-900 hover:bg-blue-950 text-white font-bold text-sm py-3 px-4 rounded-xl cursor-pointer transition-colors duration-200">
-                  Explore Now →
-                </motion.button>
-                <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={onClose}
-                  className="bg-gray-100 hover:bg-gray-200 text-gray-600 font-semibold text-sm py-3 px-4 rounded-xl cursor-pointer transition-colors duration-200">
-                  Close
-                </motion.button>
-              </div>
             </div>
           </motion.div>
         </AnimatePresence>
@@ -188,30 +168,12 @@ export default function TechnologySection() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <div className="min-h-screen bg-white" style={{ fontFamily: "'Helvetica Neue', Arial, sans-serif" }}>
-
-      {/* ── Navbar — Image 2 exact ── */}
-      <div className="bg-slate-100 px-8 py-4 flex items-center">
-        <div>
-          <div className="font-black text-blue-950" style={{ fontSize: 15, letterSpacing: "0.06em" }}>
-            REWARDGENIX
-          </div>
-          <div className="text-blue-950/55 font-semibold" style={{ fontSize: 8, letterSpacing: "0.2em" }}>
-            REWARD . ENABLE . ENGAGE
-          </div>
-        </div>
-      </div>
-
+    <div className="w-[calc(100%-4rem)] 2xl:w-[calc(100%-6rem)] min-h-screen bg-white">
+      <Header />
       {/* ── Hero — Image 2 exact ── */}
       <div className="text-center" style={{ paddingTop: 52, paddingBottom: 36 }}>
-        <p className="text-gray-400 mb-1.5" style={{ fontSize: 13 }}>What do we do</p>
-        <h1
-          className="font-black text-blue-950 leading-none"
-          style={{
-            fontSize: "clamp(56px, 8.5vw, 96px)",
-            letterSpacing: "-0.02em",
-          }}
-        >
+        <p className="text-gray-400 mb-1.5" style={{ fontSize: 13 }}>Our backbone</p>
+        <h1>
           TECHNOLOGY
         </h1>
       </div>
@@ -227,14 +189,15 @@ export default function TechnologySection() {
           - All rows same height
           - Cards have soft shadow/border visible
       ── */}
-      <div className="mx-auto pb-24" style={{ maxWidth: 860, paddingLeft: 40, paddingRight: 40 }}>
+      <div className="mx-auto pb-24" style={{ maxWidth: 980}}>
 
         {/* ROW 1: [wide] [normal] [normal] */}
         <div className="flex gap-2.5 mb-2.5">
+          
           {/* Card 1 — wide, landscape ratio */}
           <motion.div
             className="relative overflow-hidden cursor-pointer flex-shrink-0"
-            style={{ width: "48%", height: 230, borderRadius: 16 }}
+            style={{ width: "48%", height: 280, borderRadius:12}}
             initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }}
             whileHover={{ scale: 1.016 }}
             onClick={() => setOpenIndex(0)}
@@ -243,14 +206,14 @@ export default function TechnologySection() {
             <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,10,30,0.8) 0%, rgba(5,10,30,0.05) 55%, transparent 100%)" }} />
             <div className="absolute bottom-0 left-0 right-0 p-3.5">
               <div className="text-white/70 font-bold uppercase mb-1" style={{ fontSize: 9, letterSpacing: "0.12em" }}>{cards[0].category}</div>
-              <div className="text-white font-bold leading-snug" style={{ fontSize: 13, fontFamily: "'Georgia',serif", whiteSpace: "pre-line" }}>{cards[0].title}</div>
+              <div className="text-white leading-snug" style={{ whiteSpace: "pre-line" }}>{cards[0].title}</div>
             </div>
           </motion.div>
 
           {/* Card 2 */}
           <motion.div
             className="relative overflow-hidden cursor-pointer flex-1"
-            style={{ height: 230, borderRadius: 16 }}
+            style={{ height: 280, borderRadius:12}}
             initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
             whileHover={{ scale: 1.016 }}
             onClick={() => setOpenIndex(1)}
@@ -259,14 +222,14 @@ export default function TechnologySection() {
             <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,10,30,0.8) 0%, rgba(5,10,30,0.05) 55%, transparent 100%)" }} />
             <div className="absolute bottom-0 left-0 right-0 p-3.5">
               <div className="text-white/70 font-bold uppercase mb-1" style={{ fontSize: 9, letterSpacing: "0.12em" }}>{cards[1].category}</div>
-              <div className="text-white font-bold leading-snug" style={{ fontSize: 13, fontFamily: "'Georgia',serif", whiteSpace: "pre-line" }}>{cards[1].title}</div>
+              <div className="text-white leading-snug" style={{whiteSpace: "pre-line" }}>{cards[1].title}</div>
             </div>
           </motion.div>
 
           {/* Card 3 */}
           <motion.div
             className="relative overflow-hidden cursor-pointer flex-1"
-            style={{ height: 230, borderRadius: 16 }}
+            style={{ height: 280, borderRadius: 12}}
             initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }}
             whileHover={{ scale: 1.016 }}
             onClick={() => setOpenIndex(2)}
@@ -275,7 +238,7 @@ export default function TechnologySection() {
             <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,10,30,0.8) 0%, rgba(5,10,30,0.05) 55%, transparent 100%)" }} />
             <div className="absolute bottom-0 left-0 right-0 p-3.5">
               <div className="text-white/70 font-bold uppercase mb-1" style={{ fontSize: 9, letterSpacing: "0.12em" }}>{cards[2].category}</div>
-              <div className="text-white font-bold leading-snug" style={{ fontSize: 13, fontFamily: "'Georgia',serif", whiteSpace: "pre-line" }}>{cards[2].title}</div>
+              <div className="text-white leading-snug" style={{whiteSpace: "pre-line" }}>{cards[2].title}</div>
             </div>
           </motion.div>
         </div>
@@ -285,7 +248,7 @@ export default function TechnologySection() {
           {/* Card 4 */}
           <motion.div
             className="relative overflow-hidden cursor-pointer flex-1"
-            style={{ height: 230, borderRadius: 16 }}
+            style={{ height: 280, borderRadius:12 }}
             initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
             whileHover={{ scale: 1.016 }}
             onClick={() => setOpenIndex(3)}
@@ -294,14 +257,14 @@ export default function TechnologySection() {
             <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,10,30,0.8) 0%, rgba(5,10,30,0.05) 55%, transparent 100%)" }} />
             <div className="absolute bottom-0 left-0 right-0 p-3.5">
               <div className="text-white/70 font-bold uppercase mb-1" style={{ fontSize: 9, letterSpacing: "0.12em" }}>{cards[3].category}</div>
-              <div className="text-white font-bold leading-snug" style={{ fontSize: 13, fontFamily: "'Georgia',serif", whiteSpace: "pre-line" }}>{cards[3].title}</div>
+              <div className="text-white leading-snug" style={{whiteSpace: "pre-line" }}>{cards[3].title}</div>
             </div>
           </motion.div>
 
           {/* Card 5 — wide center */}
           <motion.div
             className="relative overflow-hidden cursor-pointer flex-shrink-0"
-            style={{ width: "48%", height: 230, borderRadius: 16 }}
+            style={{ width: "48%", height: 280, borderRadius:12}}
             initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }}
             whileHover={{ scale: 1.016 }}
             onClick={() => setOpenIndex(4)}
@@ -310,14 +273,14 @@ export default function TechnologySection() {
             <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,10,30,0.8) 0%, rgba(5,10,30,0.05) 55%, transparent 100%)" }} />
             <div className="absolute bottom-0 left-0 right-0 p-3.5">
               <div className="text-white/70 font-bold uppercase mb-1" style={{ fontSize: 9, letterSpacing: "0.12em" }}>{cards[4].category}</div>
-              <div className="text-white font-bold leading-snug" style={{ fontSize: 13, fontFamily: "'Georgia',serif", whiteSpace: "pre-line" }}>{cards[4].title}</div>
+              <div className="text-white leading-snug" style={{whiteSpace: "pre-line" }}>{cards[4].title}</div>
             </div>
           </motion.div>
 
           {/* Card 6 */}
           <motion.div
             className="relative overflow-hidden cursor-pointer flex-1"
-            style={{ height: 230, borderRadius: 16 }}
+            style={{ height: 280, borderRadius: 16 }}
             initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
             whileHover={{ scale: 1.016 }}
             onClick={() => setOpenIndex(5)}
@@ -326,7 +289,7 @@ export default function TechnologySection() {
             <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,10,30,0.8) 0%, rgba(5,10,30,0.05) 55%, transparent 100%)" }} />
             <div className="absolute bottom-0 left-0 right-0 p-3.5">
               <div className="text-white/70 font-bold uppercase mb-1" style={{ fontSize: 9, letterSpacing: "0.12em" }}>{cards[5].category}</div>
-              <div className="text-white font-bold leading-snug" style={{ fontSize: 13, fontFamily: "'Georgia',serif", whiteSpace: "pre-line" }}>{cards[5].title}</div>
+              <div className="text-white leading-snug" style={{whiteSpace: "pre-line" }}>{cards[5].title}</div>
             </div>
           </motion.div>
         </div>
@@ -337,7 +300,7 @@ export default function TechnologySection() {
             <motion.div
               key={cards[idx].id}
               className="relative overflow-hidden cursor-pointer flex-1"
-              style={{ height: 230, borderRadius: 16 }}
+              style={{ height: 280, borderRadius: 16 }}
               initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35 + i * 0.05 }}
               whileHover={{ scale: 1.016 }}
               onClick={() => setOpenIndex(idx)}
@@ -346,7 +309,7 @@ export default function TechnologySection() {
               <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,10,30,0.8) 0%, rgba(5,10,30,0.05) 55%, transparent 100%)" }} />
               <div className="absolute bottom-0 left-0 right-0 p-3.5">
                 <div className="text-white/70 font-bold uppercase mb-1" style={{ fontSize: 9, letterSpacing: "0.12em" }}>{cards[idx].category}</div>
-                <div className="text-white font-bold leading-snug" style={{ fontSize: 13, fontFamily: "'Georgia',serif", whiteSpace: "pre-line" }}>{cards[idx].title}</div>
+                <div className="text-white leading-snug" style={{whiteSpace: "pre-line" }}>{cards[idx].title}</div>
               </div>
             </motion.div>
           ))}
@@ -359,6 +322,7 @@ export default function TechnologySection() {
           <Popup startIndex={openIndex} onClose={() => setOpenIndex(null)} />
         )}
       </AnimatePresence>
+      <Footer />
     </div>
   );
 }

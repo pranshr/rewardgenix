@@ -17,16 +17,16 @@ const Sidebar = () => {
                 <ul className="py-[40px]">
                     <NavItem route="/" label="Home" />
                     <NavItem route="" label="About" clickable={false} />
-                    <NavItem route="/about" label="- Team" />
-                    <NavItem route="/partner-loyalty" label="- Partner Loyalty" />
-                    <NavItem route="/customer-loyalty" label="- Customer Loyalty" />
+                    <NavItem route="/about" label="... Team" />
+                    <NavItem route="/partner-loyalty" label="... Partner Loyalty" />
+                    <NavItem route="/customer-loyalty" label="... Customer Loyalty" />
                     <NavItem route="/solutions" label="Solutions" />
                     <NavItem route="/technology" label="Technology" />
                     <NavItem route="/contact" label="Contact Us" />
                     <NavItem route="/blog" label="Blog" />
                     <NavItem route="" label="Legal" clickable={false}/>
-                    <NavItem route="/terms-and-conditions" label="- Terms" />
-                    <NavItem route="/privacy-policy" label="- Privacy" />
+                    <NavItem route="/terms-and-conditions" label="... Terms" />
+                    <NavItem route="/privacy-policy" label="... Privacy" />
                 </ul>
             </div>
 

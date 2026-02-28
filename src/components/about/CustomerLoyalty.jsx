@@ -9,14 +9,11 @@ const CustomerLoyalty = () => {
             <Header />
             <div className="flex flex-col justify-center items-center pt-12">
                 <div className="text-sm text-[#272A59]">
-                    Privacy matters
+                    Revolves around the long-term commitment
                 </div>
-                <h1 className="text-8xl font-semibold uppercase text-[#272A59]">
+                <h1>
                     Customer Loyalty
                 </h1>
-                <p2 className="w-5/10 2xl:w-4/10 text-center m-12">
-                    Lorem Ipsum is simply dummy sample text of the printing and typesetting industry.
-                </p2>
                 <div className="w-8/10 2xl:w-6/10 m-2">
                 <p>Customer loyalty revolves around the long-term commitment and repeat business that a company receives from its customers. It's built through positive customer experiences, value-driven services or products, and personalized interactions. Loyal customers are more likely to make repeat purchases, recommend the brand to others, and forgive occasional issues, making them a vital asset to any business.</p>
 
