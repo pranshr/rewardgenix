@@ -118,7 +118,7 @@ function Popup({ startIndex, onClose }) {
             className="bg-white rounded-3xl overflow-hidden"
             style={{ boxShadow: "0 50px 100px rgba(0,0,0,0.55)" }}
           >
-            <div className="relative overflow-hidden" style={{ height: 480 }}>
+            <div className="relative overflow-hidden" style={{ height: 400 }}>
               <img src={card.bg} className="w-full h-full object-cover" alt={card.title} />
               <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,10,35,0.88) 0%, transparent 55%)" }} />
               <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={onClose}
