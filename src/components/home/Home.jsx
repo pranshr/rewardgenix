@@ -95,7 +95,7 @@ const Home = () => {
         <IntegratedCX />
         <SolutionsSection />
         <MobileSection />
-        <CaseStudy />
+        {/*<CaseStudy />*/}
         <News/>
         <FAQSection />
         <img src="./img/footer.jpg" alt="footer" />

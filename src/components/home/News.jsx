@@ -42,6 +42,7 @@ const newsData = {
 
 export default function NewsSection() {
   return (
+    <div className="bg-white">
     <section className="max-w-5xl mx-auto px-6 py-12">
       {/* Title */}
       <h2 className="text-3xl text-[#2B2E5B] my-8 font-semibold uppercase text-center">
@@ -114,5 +115,6 @@ export default function NewsSection() {
 
       </div>
     </section>
+    </div>
   );
 }
